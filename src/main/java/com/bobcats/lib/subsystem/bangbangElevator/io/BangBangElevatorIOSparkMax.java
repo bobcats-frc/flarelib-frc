@@ -1,3 +1,7 @@
+// Copyright 2025-2027 Bobcats Robotics
+// GitGub https://github.com/bobcats-frc
+// This project is included under an MIT license by the LICENSE file located at
+// the root project folder.
 package com.bobcats.lib.subsystem.bangbangElevator.io;
 
 import static com.revrobotics.spark.SparkUtils.retryUntilOk;

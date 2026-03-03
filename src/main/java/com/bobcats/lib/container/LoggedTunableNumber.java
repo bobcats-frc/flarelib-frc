@@ -1,10 +1,7 @@
-// Copyright (c) 2025 FRC 6328
-// http://github.com/Mechanical-Advantage
-//
-// Use of this source code is governed by an MIT-style
-// license that can be found in the LICENSE file at
-// the root directory of this project.
-
+// Copyright 2025-2027 Bobcats Robotics
+// GitGub https://github.com/bobcats-frc
+// This project is included under an MIT license by the LICENSE file located at
+// the root project folder.
 package com.bobcats.lib.container;
 
 import java.util.Arrays;

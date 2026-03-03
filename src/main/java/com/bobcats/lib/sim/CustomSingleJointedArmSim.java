@@ -1,7 +1,7 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
-
+// Copyright 2025-2027 Bobcats Robotics
+// GitGub https://github.com/bobcats-frc
+// This project is included under an MIT license by the LICENSE file located at
+// the root project folder.
 package com.bobcats.lib.sim;
 
 import static edu.wpi.first.units.Units.Amps;
