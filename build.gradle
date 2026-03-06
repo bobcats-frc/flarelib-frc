@@ -210,7 +210,7 @@ spotless {
         trimTrailingWhitespace()
         formatAnnotations()
         endWithNewline()
-        licenseHeader("// Copyright 2025-2027 Bobcats Robotics\n// GitGub https://github.com/bobcats-frc\n// This project is included under an MIT license by the LICENSE file located at\n// the root project folder.")
+        licenseHeader("// Copyright 2025-2027 Bobcats Robotics\n// GitHub https://github.com/bobcats-frc\n// This project is included under an MIT license by the LICENSE file located at\n// the root project folder.")
     }
     groovyGradle {
         target fileTree(".") {

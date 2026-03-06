@@ -1,5 +1,5 @@
 // Copyright 2025-2027 Bobcats Robotics
-// GitGub https://github.com/bobcats-frc
+// GitHub https://github.com/bobcats-frc
 // This project is included under an MIT license by the LICENSE file located at
 // the root project folder.
 package com.bobcats.lib.subsystem.vision;
@@ -41,9 +41,7 @@ public class LibVisionSubsystem extends SubsystemBase {
 	private final Alert[] m_disconnectedAlerts;
 
 	/** The AprilTag layout of the field. */
-	// TODO Change before US regional
-	public static final AprilTagFieldLayout kLayout = AprilTagFieldLayout
-			.loadField(AprilTagFields.k2026RebuiltAndymark);
+	public static AprilTagFieldLayout kLayout = AprilTagFieldLayout.loadField(AprilTagFields.k2026RebuiltWelded);
 	/** The region representing the rectangular field. */
 	// public static final RectangularRegion kFieldRegion = new RectangularRegion(new
 	// Translation2d(0.0, 0.0),
