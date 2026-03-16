@@ -640,8 +640,8 @@ public class AutonomousManager {
 
 	private Command getPathfindCommandPrivate(Pose2d pose, String poseName, double tol) {
 		if (pose == null && m_pathfindStrategy != PathfindStrategy.kPrecisionPathfind) return Commands.none();
-		pose = AllianceUtil.flipWithAlliance(pose);
-
+		if (m_pathfindStrategy != PathfindStrategy.kPrecisionPathfind) pose = AllianceUtil.flipWithAlliance(pose);
+		
 		// The setup for pathfinding
 		if (m_pathfindStrategy == PathfindStrategy.kPrecisionPathfind) {
 			try {

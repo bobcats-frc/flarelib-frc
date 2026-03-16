@@ -180,13 +180,6 @@ public class ShooterCalculator {
 					dirZ * exitVelocity / dmag);
 		}
 
-		// Check angle bounds
-		if ((turretAngleRobot.getDegrees() < m_descriptor.getMinTurretAngle()
-				&& Math.abs(m_descriptor.getMinTurretAngle()) < 180)
-				|| (turretAngleRobot.getDegrees() > m_descriptor.getMaxTurretAngle()
-						&& Math.abs(m_descriptor.getMaxTurretAngle()) < 180))
-			isWithinShotBounds = false;
-
 		// Add turret robot linear velocity contribution to x,y components
 		// (field-relative).
 		velVec3 = new Vector3(velVec3.x + vt_x, velVec3.y + vt_y, velVec3.z);

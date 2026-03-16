@@ -18,7 +18,6 @@ public class ShooterDescriptor {
 	private double m_shotDelay;
 	private double m_barrelLength;
 
-	private double m_minTurretAngle, m_maxTurretAngle;
 	private double m_minAllowedDistance, m_maxAllowedDistance;
 
 	// Calculation components
@@ -35,8 +34,6 @@ public class ShooterDescriptor {
 		m_robotToTurret3d = builder.m_robotToTurret3d;
 		m_rollerRadius = builder.m_rollerRadius;
 
-		m_minTurretAngle = builder.m_minTurretAngle;
-		m_maxTurretAngle = builder.m_maxTurretAngle;
 		m_shotDelay = builder.m_shotDelay;
 		m_barrelLength = builder.m_barrelLength;
 		m_minAllowedDistance = builder.m_minAllowedDistance;
@@ -54,7 +51,6 @@ public class ShooterDescriptor {
 		private double m_shotDelay = 0; //
 		private double m_barrelLength = 0.15; //
 
-		private double m_minTurretAngle = 180, m_maxTurretAngle = -180; //
 		private double m_minAllowedDistance = 0, m_maxAllowedDistance = Double.POSITIVE_INFINITY; //
 
 		// Calculation components
@@ -71,19 +67,6 @@ public class ShooterDescriptor {
 		public Builder(double rollerRadius, Transform3d robotToTurretPivot) {
 			m_rollerRadius = rollerRadius;
 			m_robotToTurret3d = robotToTurretPivot;
-		}
-
-		/**
-		 * Sets the yaw turret angle range for the shooter, in degrees.
-		 *
-		 * @param minDeg The minimum angle, in degrees. Ideally should be negative.
-		 * @param maxDeg The maximum angle in degrees. Ideally should be positive.
-		 * @return The builder instance for chaining.
-		 */
-		public Builder turretAngleRange(double minDeg, double maxDeg) {
-			m_minTurretAngle = minDeg;
-			m_maxTurretAngle = maxDeg;
-			return this;
 		}
 
 		/**
@@ -209,10 +192,6 @@ public class ShooterDescriptor {
 	public double getShotDelay() { return m_shotDelay; }
 
 	public double getBarrelLength() { return m_barrelLength; }
-
-	public double getMinTurretAngle() { return m_minTurretAngle; }
-
-	public double getMaxTurretAngle() { return m_maxTurretAngle; }
 
 	public double getMinDistance() { return m_minAllowedDistance; }
 
