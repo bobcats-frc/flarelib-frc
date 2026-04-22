@@ -51,6 +51,16 @@ public class AllianceUtil {
 	}
 
 	/**
+	 * Flips the given blue-relative rotation according to the current alliance.
+	 *
+	 * @param blueRelativeRot The blue-alliance relative rotation.
+	 * @return The appropriately flipped rotation.
+	 */
+	public static Rotation2d flipWithAlliance(Rotation2d blueRelativeRot) {
+		return isRedAlliance() ? FlippingUtil.flipFieldRotation(blueRelativeRot) : blueRelativeRot;
+	}
+
+	/**
 	 * Returns whether the current alliance is red.
 	 *
 	 * @return Whether the current alliance is red.
